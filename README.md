@@ -1,6 +1,6 @@
 # Databases Docker Compose Files
 
-Using [Docker](https://www.docker.com/) for a global databases in the system
+Using [Docker](https://www.docker.com/) for a global database solution
 
 ## Features
 
