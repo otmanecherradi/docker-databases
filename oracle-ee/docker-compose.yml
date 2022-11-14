@@ -1,0 +1,14 @@
+# Use docker/docker as user/password credentials
+
+services:
+  oracledb:
+    image: container-registry.oracle.com/database/express:21.3.0-xe
+    environment:
+      ORACLE_SID: docker
+      ORACLE_PDB: docker
+      ORACLE_PWD: docker
+    volumes:
+      - ./data:/opt/oracle/oradata
+    ports:
+      - 1521:1521
+      - 5500:5500
