@@ -1,0 +1,11 @@
+# Use root/docker as user/password credentials
+
+services:
+  cassandradb:
+    image: cassandra:4
+    ports:
+      - 9042:9042
+    volumes:
+      - ./data/cassandra:/var/lib/cassandra
+    environment:
+      - CASSANDRA_CLUSTER_NAME=csdb
