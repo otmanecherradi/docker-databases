@@ -3,7 +3,6 @@
 services:
   postgresqldb:
     image: postgres:alpine
-    restart: always
     environment:
       POSTGRES_USER: docker
       POSTGRES_PASSWORD: docker
@@ -14,7 +13,6 @@ services:
 
   adminer:
     image: adminer
-    restart: always
     ports:
       - 8090:8080
     environment:
