@@ -30,3 +30,21 @@ Using [Docker](https://www.docker.com/) for a global database solution
     - Password: `docker`
   - Management
     - [mongo-express](https://github.com/mongo-express/mongo-express) is the database manager of choice to use. Once started, use <http://localhost:8092/>
+
+- [Oracle Express Edition](https://www.oracle.com/in/database/technologies/appdev/xe.html)
+
+  - File: [docker-compose.yml](./oracle-ex/docker-compose.yml)
+  - Credentials
+    - Username: `docker`
+    - Password: `docker`
+  - Management
+    - Built in
+
+- [Cassandra](https://cassandra.apache.org/_/index.html)
+
+  - File: [docker-compose.yml](./cassandra/docker-compose.yml)
+  - Credentials
+    - Username: `docker`
+    - Password: `docker`
+  - Management
+    - -
