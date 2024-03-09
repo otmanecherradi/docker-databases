@@ -1,0 +1,12 @@
+# Use docker/docker as user/password credentials
+
+services:
+  redisdb:
+    image: redis:alpine
+    environment:
+      - REDIS_ARGS=--requirepass docker
+    volumes:
+      - ./data:/data
+    ports:
+      - 6379:6379
+
